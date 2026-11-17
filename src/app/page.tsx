@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center px-5 py-16 text-center">
+    <main
+      data-component="HomePage"
+      data-source="src/app/page.tsx"
+      className="mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center px-5 py-16 text-center">
       <div className="text-5xl" aria-hidden="true">
         🌳
       </div>

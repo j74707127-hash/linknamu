@@ -18,6 +18,8 @@ export default function ServiceIcon({ service }: { service: LinkService }) {
   return (
     <span
       aria-hidden="true"
+      data-component="ServiceIcon"
+      data-source="src/components/ServiceIcon.tsx"
       className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold ${className}`}
     >
       {text}

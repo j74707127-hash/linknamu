@@ -19,6 +19,8 @@ export default function CopyLinkButton() {
     <button
       type="button"
       onClick={handleCopy}
+      data-component="CopyLinkButton"
+      data-source="src/components/CopyLinkButton.tsx"
       className="rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
     >
       <span aria-live="polite">{copied ? "복사했어요!" : "링크 복사"}</span>

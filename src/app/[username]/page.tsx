@@ -45,7 +45,11 @@ async function Profile({ params }: { params: Promise<{ username: string }> }) {
       <section aria-label="링크 목록" className="mt-8">
         <LinkList links={links} />
       </section>
-      <footer className="mt-10 flex flex-col items-center gap-3">
+      <footer
+        data-component="Footer"
+        data-source="src/app/[username]/page.tsx"
+        className="mt-10 flex flex-col items-center gap-3"
+      >
         <CopyLinkButton />
         <p className="text-xs text-neutral-400">made with 링크나무</p>
       </footer>

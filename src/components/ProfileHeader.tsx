@@ -2,13 +2,19 @@ import type { User } from "@/lib/types";
 
 export default function ProfileHeader({ user }: { user: User }) {
   return (
-    <header className="flex flex-col items-center text-center">
+    <header
+      data-component="ProfileHeader"
+      data-source="src/components/ProfileHeader.tsx"
+      className="flex flex-col items-center text-center"
+    >
       {user.avatarUrl ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={user.avatarUrl}
           alt={`${user.displayName} 프로필 사진`}
-          className="h-32 w-32 rounded-full object-cover"
+          width={128}
+          height={128}
+          className="h-32 w-32 rounded-full object-cover object-[center_25%]"
         />
       ) : (
         <div
